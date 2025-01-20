@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  backend-java:
+    build: ./backend-java
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+  api-gateway-nestjs:
+    build: ./api-gateway-nestjs
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: healthcare
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

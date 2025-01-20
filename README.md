@@ -43,17 +43,17 @@
 
 ### Backend em Java (Spring Boot)
 
-O backend será responsável por gerenciar as regras de negócio e fornecer uma API para o Nest.js.
-Banco de dados relacional com PostgreSQL ou MySQL.
-Autenticação JWT ou OAuth2.
+* O backend será responsável por gerenciar as regras de negócio e fornecer uma API para o Nest.js.
+Banco de dados relacional com MySQL.
+* Autenticação JWT ou OAuth2.
 
 ### API Gateway com Nest.js
 
-Usar Nest.js para criar uma camada de comunicação com o backend Java.
-Implementar GraphQL ou REST para facilitar o acesso às funcionalidades.
-Utilizar validações com decorators (ex.: @IsEmail, @Length) do Nest.js.
+* Usar Nest.js para criar uma camada de comunicação com o backend Java.
+* Implementar GraphQL ou REST para facilitar o acesso às funcionalidades.
+* Utilizar validações com decorators (ex.: @IsEmail, @Length) do Nest.js.
 
 ### Banco de Dados
 
-MongoDB para o Nest.js, caso use cache ou outros dados rápidos.
-PostgreSQL/MySQL integrado com o backend Java para dados críticos.
+* MongoDB para o Nest.js, caso use cache ou outros dados rápidos.
+* MySQL integrado com o backend Java para dados críticos.
